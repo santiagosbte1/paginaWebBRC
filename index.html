@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bedoya Restrepo Consultores</title>
+    <link rel="icon" href="images/favicono.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/journal/bootstrap.min.css" integrity="sha384-QDSPDoVOoSWz2ypaRUidLmLYl4RyoBWI44iA5agn6jHegBxZkNqgm2eHb6yZ5bYs" crossorigin="anonymous">
+    <script defer src="scripts/main.js"></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+                <img class="isotipo" src="images/isotipo.png" alt="">
+            <button id="navtoggle" aria-label="Abrir Menu" class="nav-toggle">
+                <i class="bi bi-list"></i>
+            </button>
+            <ul id="navmenu" class="nav-menu">
+                <li class="nav-menu-item">
+                    <label for="radio1" class="nav-menu-link link-inicio">Inicio</label>
+                </li>
+                <li class="nav-menu-item">
+                    <label for="radio2" class="nav-menu-link link-servicios">Servicios</label>
+                </li>
+                <li class="nav-menu-item">
+                    <label for="radio3" class="nav-menu-link link-nosotros">Nosotros</label>
+                </li>
+                <li class="nav-menu-item">
+                    <label for="radio4" class="nav-menu-link link-contacto">Contactanos</label>
+                </li>
+            </ul>
+            <div class="login-container">
+            <button class="singinbutton">
+                <i class="bi bi-person-circle"></i>
+                <a href="http://167.88.45.97/" class="singinbutton-link" target="_blank">Ingresar</a>
+            </button>
+            <span class="pais">Colombia</span>
+        </div>
+        </nav>
+    </header>
+    
+    
+    <main class="background">
+        <input checked type="radio" name="radio" id="radio1">
+        <article class="content-inicio"> 
+            <section class="section-inicio">
+                <div class="contenedor-info">
+                    <img class="logo-completo" src="images/logo-completo.png" alt="logo-empresa">
+                    <div class="contenedor-titulos">
+                        <h1 class="titulo-pagina">Bedoya Restrepo Consultores</h1>
+                    <p class="texto-principal">Somo una firma especializada en temas tributarios y financieros. integrado por un equipo de profesionales expertos en estas diciplinas, con una experiencia de más de seis años en asesoría a compañía nacionales públicas y privadas. Nuestro servicio es personalizado e integral y se presta con compromiso y profesionalismo consultando las necesidades particulares de cada cliente.</p>
+                    </div>
+                </div>
+                <div class="contenedor-municipios">
+                    <button class="buttom-santarosa" onclick="window.modalsantarosa.showModal();">
+                        <img class="banner banner-santarosa" src="images/BANNERS-MUNICIPIOS-SANTAROSADEOSOS.png" alt="">
+                    </button>
+                    <dialog id="modalsantarosa">
+                        <div class="modal-conten">
+                            <h3>Ubicanos</h3>
+                            <h4>Santa Rosa de Osos</h4>
+                            <p>Calle 30 Nro 31-08 Parque Principal</p>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d487.6330699930695!2d-75.461242!3d6.648629000000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4445e84c8c54fb%3A0xacc30230a3d76777!2sBedoya%20Restrepo%20Consultores%20Santa%20Rosa%20de%20Osos!5e1!3m2!1ses-419!2sco!4v1733937226158!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <button class="button-modal"  onclick="window.modalsantarosa.close();">Cerrar</button>
+                        </div>
+                    </dialog>
+                    <button class="button-yarumal" onclick="window.modalyarumal.showModal();">
+                        <img class="banner banner-yarumal" src="images/BANNERS-MUNICIPIOS-YARUMAL.png" alt="">
+                    </button>
+                    <dialog id="modalyarumal">
+                        <div class="modal-conten">
+                            <h3>Ubicanos</h3>
+                            <h4>Yarumal</h4>
+                            <p>Carrera 19 Nro 17-69</p>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d664.9298765624666!2d-75.41603043733156!3d6.96286908816824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e44f3dfbf5458db%3A0x7303878a3eaf6b74!2sBedoya%20Villegas%20Consultores%20Yarumal!5e1!3m2!1ses!2sco!4v1733937490135!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <button class="button-modal"  onclick="window.modalyarumal.close();">Cerrar</button>
+                        </div>  
+                    </dialog>
+                    <button class="button-entrerrios" onclick="window.modalentrerrios.showModal();">
+                        <img class="banner banner-entrerrios" src="images/BANNERS-MUNICIPIOS-ENTRERRIOS.png" alt=""> 
+                    </button>
+                    <dialog id="modalentrerrios">
+                        <div class="modal-conten">
+                            <h3>Ubicanos</h3>
+                            <h4>Entrerrios</h4>
+                            <p>Calle 9 Nro 13-40</p>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d504.73157073813513!2d-75.51824768794292!3d6.565940212180325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e444719fd4415f9%3A0xb2cc8ea67fcc15b2!2sBedoya%20Restrepo%20Consultores%20Entrerr%C3%ADos!5e1!3m2!1ses!2sco!4v1733937586790!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <button class="button-modal" onclick="window.modalentrerrios.close();">Cerrar</button>
+                        </div>
+                    </dialog>
+                </div>
+                <div class="contenedor-clientes">
+                    <h3 class="titulo-clientes">Algunos de Nuestros Clientes</h3>
+                    <div class="slider">
+                        <div class="slider-track">
+                            <div class="slide">
+                                <img src="images/logo-ladistrital.png" alt="">
+                            </div>
+                            <div class="slide">
+                                <img src="images/logo-llantas.png" alt="">
+                            </div>
+                            <div class="slide">
+                                <img src="images/logo-puntoamarillo.png" alt="">
+                            </div>
+                            <div class="slide">
+                                <img src="images/logo-solucion.png" alt="">
+                            </div>
+                            <div class="slide">
+                                <img src="images/logo-transuniyar.png" alt="">
+                            </div>
+                            <div class="slide">
+                                <img src="images/logo-ladistrital.png" alt="">
+                            </div>
+                            <div class="slide">
+                                <img src="images/logo-llantas.png" alt="">
+                            </div>
+                            <div class="slide">
+                                <img src="images/logo-puntoamarillo.png" alt="">
+                            </div>
+                            <div class="slide">
+                                <img src="images/logo-solucion.png" alt="">
+                            </div>
+                            <div class="slide">
+                                <img src="images/logo-transuniyar.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+        </article>
+
+        <input type="radio" name="radio" id="radio2">
+        <article class="content-servicios"> 
+            <h2>Servicios</h2>
+        </article>
+
+        <input type="radio" name="radio" id="radio3">
+        <article class="content-nosotros"> 
+            <h2>Nosotros</h2>
+        </article>
+
+        <input type="radio" name="radio" id="radio4">
+        <article class="content-contacto"> 
+            <h2>Contactanos</h2>
+        </article>
+    </main>
+    
+    <footer class="footer">
+        <div class="footer-container">
+            <p class="footer-son">Auditoria y Consultoria Contable Integral</p>
+        </div>
+    </footer>
+</body>
+</html>

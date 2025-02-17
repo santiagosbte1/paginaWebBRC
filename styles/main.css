@@ -1,0 +1,509 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+
+body {
+    background-image: url("../images/fondo-landing.jpeg");
+    padding: 65px 5px 46px;
+    display:grid;
+    min-height: 100vh;
+}
+
+.background {
+    background-color: #9992;
+    width: 100%;
+    min-height: 130vh;
+    backdrop-filter: blur(35px);
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    background-color: #fff;
+    height: 90px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.isotipo {
+    max-height: 90px;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.nav a {
+    color: #111;
+    text-decoration: none;
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+.logo {
+    padding: 0 40px;
+    line-height: 90px;
+}
+
+.logo:hover{
+    text-decoration: none;
+    color: #111;
+}
+
+.nav-menu {
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+
+.nav-menu-item {
+    font-size: 20px;
+    margin: 0 10px;
+    line-height: 100px;
+    text-transform:capitalize;
+    width: max-content;
+}
+
+.singinbutton {
+    margin-top: 8px;
+    height: max-content;
+    font-size: 20px;
+    background: none;
+    border: none;
+    padding: 0 10px;
+    border-radius: 8px;
+}
+.singinbutton-link{
+    text-align: center;
+}
+
+.singinbutton:hover {
+    background-color: #1116;
+}
+
+.bi-person-circle {
+    font-size: 25px;
+}
+
+.singinbutton-link:hover {
+    text-decoration: none;
+    color: #111;
+}
+
+.nav-menu-link{
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.nav-menu-link:hover {
+    text-decoration: none;
+    transition: .15s;
+}
+
+.link-inicio:hover{
+    color: #679ac3;
+}
+.link-servicios:hover{
+    color: #729060;
+}
+.link-nosotros:hover{
+    color: #057ca6;
+}
+.link-contacto:hover{
+    color: #2d4f8f;
+}
+.link-inicio:active{
+    color: #98cbe6;
+}
+.link-servicios:active{
+    color: #b6d0a0;
+}
+.link-nosotros:active{
+    color: #057ca6;
+}
+.link-contacto:active{
+    color: #2d4f8f;
+}
+
+.nav-toggle {
+    color: #111;
+    font-size: 40px;
+    padding: 0 20px;
+    line-height: 40px;
+    display: none;
+}
+
+.content-inicio, .content-contacto, .content-servicios, .content-nosotros {
+    background-color: #eef;
+        width: 95%;
+        height: 96%;
+        margin: auto;
+        margin-top: 20px;
+        justify-content: center;
+        border-radius: 15px;
+        position:absolute;
+        overflow: auto;
+        box-shadow:1px 1px 9px #111b;
+        display: flex;
+    }
+    
+    .section-inicio{
+        width: 97%;
+        margin-top: 2rem;
+    }
+    
+    .contenedor-info {
+        max-width: 97%;
+        margin: auto;
+        display: flex;
+    }
+
+    .logo-completo {
+        max-width: 50%;
+        margin-inline: auto
+    }
+    
+    .login-container {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    
+    .login-container span {
+        margin-top: 10px;
+        margin-left: 35px;
+    }
+    .footer {
+        background-color: #fff;
+        width: 100%;
+        height: 50px;
+        left: 0;
+        bottom: 0;
+        position: fixed;
+        z-index: -1;
+    }
+
+    .footer-son {
+        max-width: 1200px;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    .background article {
+        transition:all .1s;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .banner {
+        max-width: 700%;
+        width: 90%;
+        border-radius: 5px;
+        margin-top: 2.5rem;
+        box-shadow:1px 1px 10px #111b;
+    }
+
+    .banner:hover {
+        width: 92%;
+        box-shadow:1px 1px 100px #1115;
+        transition: .5s;
+    }
+
+    .contenedor-municipios {
+        display: flex;
+        margin: auto;
+    }
+
+    dialog {
+        border: none;
+        backdrop-filter: blur(35px);
+        border-radius: 8px;
+    }
+
+    iframe{
+        border-radius: 8px;
+    }
+
+    dialog::backdrop {
+        backdrop-filter: blur(35px);
+        background-color: #111b;
+    }
+
+    .modal-conten {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 1.5rem;
+        
+    }
+
+    #modalyarumal , #modalsantarosa , #modalentrerrios{
+        margin: auto;
+    }
+
+    .button-modal{
+        padding: 10px;
+        background-color: #eee;
+        width: 5rem;
+        margin: auto;
+        margin-top: 20px;
+        border-radius: 5px;
+    }
+
+    .contenedor-clientes {
+        margin: auto;
+        margin-top: 3rem;
+    }
+
+    .titulo-clientes {
+        margin: auto;
+        text-align: center;
+        font-weight: bolder;
+        font-size: 3rem;
+    }
+
+    .slider {
+        width: 90vw;
+        height: auto;
+        margin: auto;
+        overflow: hidden;
+        margin-top: 3rem;
+    }
+
+    .slider .slider-track {
+        display: flex;
+        animation: scroll 10s linear infinite;
+        -webkit-animation: scroll 10s linear infinite;
+        width: calc(200px * 10);
+    }
+
+    .slider .slide {
+        height: 20vh;
+        margin-inline: 1.5rem;
+        margin-top: .1rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .slider .slide img {
+        height: 100%;
+    }
+
+    .contenedor-titulos{
+        margin-top: auto;
+    }
+
+    .texto-principal {
+        font-size: 20px
+    }
+
+    .titulo-pagina{
+        font-size: 60px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    @keyframes scroll {
+        0% {
+            webkit-transform: translateX(0);
+            transform: translateX(0);
+        }
+
+        100% {
+            webkit-transform: translateX(calc(-200px * 5));
+            transform: translateX(calc(-200px * 5));
+        }
+    }
+
+@media (max-width: 900px) {
+    body {
+        padding: 55px 5px 47px;
+
+    }
+
+    .background {
+        margin-top: 0px;
+        height: 170vh;
+    }
+
+    .header {
+        height: 50px;
+        z-index: 10;
+
+    }
+    
+    .nav-menu-link:hover {
+        background-color: #dddd;
+    }
+    .logo {
+        font-size: 25px;
+        padding: 0 20px;
+        line-height: 40px;
+        height: 50px;
+    }
+    
+    .isotipo {
+        max-height: 50px;
+    }
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 20px;
+        padding: 10px 0;
+        background-color: #aaa6;
+        backdrop-filter: blur(50px);
+        position: fixed;
+        left: 0;
+        top: 50px;
+        min-width: 100%;
+        height: calc(100vh);
+        overflow-y: auto ;
+        top: 100%;
+        transition: top 0.3s;
+    }
+    
+    .nav-menu-item {
+        line-height: 50px;
+    }
+
+    .nav-menu-link:active {
+        background-color: #aaa9;
+        text-decoration: none;
+        transition: .15s;
+    }
+
+    .link-inicio:active{
+        color: #98cbe6;
+    }
+
+    .link-servicios:active{
+        color: #b6d0a0;
+    }
+
+    .link-nosotros:active{
+        color: #057ca6;
+    }
+
+    .link-contacto:active{
+        color: #2d4f8f;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+    
+    .nav-menu_visible {
+        top: 7%;
+    }
+
+    .singinbutton{  
+    margin-top: 5px;
+    }
+
+    .singinbutton a {
+        display: none;
+    }
+
+    .content-inicio {
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+    }
+
+    .section-inicio {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenedor-info {
+        display: flex;
+        flex-direction: column;
+        ;
+    }
+
+    .titulo-clientes {
+        font-size: 1rem;
+    }
+
+    .slider .slide {
+        height: 15vh;
+        margin-bottom: 1.5rem;
+    }
+
+    .slider-track {
+        max-width: 100%;
+    }
+
+    .contenedor-municipios {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .banner {
+        max-width: 80%;
+        align-items: center;
+    }
+
+    .info-general{
+        width: 95%;
+        padding-right: 0;
+        margin: 0;
+    }
+
+    .logo-completo {
+        width: 95%;
+        min-width: 90%;
+        margin: 0;
+    }
+
+    .info-logo {
+        padding-left: 0;
+        margin: 0;
+    }
+
+    .login-container span {
+        display: none;
+    }
+
+}
+
+#radio1, #radio2, #radio3, #radio4 {
+    display: none;
+}
+
+#radio2:checked ~ .content-servicios {
+    opacity: 1;
+    visibility: visible;
+}
+
+#radio3:checked ~ .content-nosotros {
+    opacity: 1;
+    visibility: visible;
+}
+
+#radio4:checked ~ .content-contacto {
+    opacity: 1;
+    visibility: visible;
+}
+
+#radio1:checked ~ .content-inicio {
+    opacity: 1;
+    visibility: visible;
+}
